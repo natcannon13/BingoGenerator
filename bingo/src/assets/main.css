@@ -27,8 +27,50 @@ a,
     place-items: center;
   }
 
+  .buttons{
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    margin: auto;
+    background-color: cadetblue;
+    color: black;
+    border-color: darkslateblue;
+    border-width: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+  height: 100vh;
+}
+
+/* Desktop view*/
+.card, .input {
+  flex: 1;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
   #app {
-    display: grid;
+    display: flex;
     /*grid-template-columns: 1fr 1fr;*/
     /*padding: 0 2rem;*/
   }

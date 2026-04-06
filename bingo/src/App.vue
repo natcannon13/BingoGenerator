@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import BingoCard from './components/BingoCard.vue';
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <BingoCard/>
+        <router-view />
     </div>
   </header>
 
